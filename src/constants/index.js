@@ -372,7 +372,7 @@ export const certifications = [
   {
     id: 2,
     name: "Oracle Cloud Foundations",
-    icon: "/assets/certifications/oracle.svg"
+    icon: "/assets/certifications/oracle.png"
   },
   {
     id: 3,
