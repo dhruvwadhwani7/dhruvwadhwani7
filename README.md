@@ -8,6 +8,7 @@
 <p align="center">
   <a href="https://instagram.com/dhruvwadhwani7"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white&style=for-the-badge" /></a>
   <a href="mailto:dhruvwadhwani77277@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white&style=for-the-badge" /></a>
+  <a href="https://dhruvwadhwani7.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-121212?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio Badge"/></a>
 </p>
 
 ---
