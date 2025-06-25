@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import "../project_layout.css"
+import "../project_layout.css";
 
 const CopyEmailButton = () => {
   const [copied, setCopied] = useState(false);
@@ -16,12 +16,20 @@ const CopyEmailButton = () => {
   };
 
   const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/assets/Dhruv-Wadhwani-Resume.pdf";
-    link.download = "Dhruv-Wadhwani-Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+    if (isIOS) {
+      // Open in a new tab for iOS devices
+      window.open("/assets/Dhruv-Wadhwani-Resume.pdf", "_blank");
+    } else {
+      // Direct download for desktop and Android
+      const link = document.createElement("a");
+      link.href = "/assets/Dhruv-Wadhwani-Resume.pdf";
+      link.download = "Dhruv-Wadhwani-Resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
   };
 
   return (
@@ -69,6 +77,7 @@ const CopyEmailButton = () => {
         whileTap={{ scale: 1.05 }}
         className="relative px-3 py-3 text-xs text-center rounded-full font-light bg-primary w-[10rem] cursor-pointer overflow-hidden flex items-center justify-center gap-2 download-button"
       >
+        <img src="assets/download.svg" className="w-4" alt="download icon" />
         Download Resume
       </motion.button>
     </div>
