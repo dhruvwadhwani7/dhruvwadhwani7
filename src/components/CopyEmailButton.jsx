@@ -20,12 +20,12 @@ const CopyEmailButton = () => {
 
     if (isIOS) {
       // Open in a new tab for iOS devices
-      window.open("/assets/Dhruv-Wadhwani-Resume.pdf", "_blank");
+      window.open("/assets/DhruvWadhwani_Resume.pdf", "_blank");
     } else {
       // Direct download for desktop and Android
       const link = document.createElement("a");
-      link.href = "/assets/Dhruv_Wadhwani_Resume.pdf";
-      link.download = "Dhruv_Wadhwani_Resume.pdf";
+      link.href = "/assets/DhruvWadhwani_Resume.pdf";
+      link.download = "DhruvWadhwani_Resume.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
