@@ -393,4 +393,9 @@ export const certifications = [
     name: "IIT Bombay Spoken Tutorial",
     icon: "/assets/certifications/spoken_tutorial.png",
   },
+  {
+    id: 9,
+    name: "Accenture Software Engineering",
+    icon: "/assets/certifications/accenture.svg",
+  },
 ];
