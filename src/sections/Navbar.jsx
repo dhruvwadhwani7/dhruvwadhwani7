@@ -23,6 +23,11 @@ function Navigation() {
           Contact
         </a>
       </li>
+       <li className="nav-li">
+        <a className="nav-link" href="#footer">
+          Socials
+        </a>
+      </li>
     </ul>
   );
 }
@@ -36,7 +41,7 @@ const Navbar = () => {
             href="/"
             className="text-xl font-bold transition-colors text-neutral-400 hover:text-white"
           >
-            Dhruv
+            Dhruv Wadhwani
           </a>
           <button
             onClick={() => setIsOpen(!isOpen)}

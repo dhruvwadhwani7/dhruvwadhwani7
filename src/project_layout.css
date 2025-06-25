@@ -1,0 +1,76 @@
+/*Project Component and Section*/
+@media only screen and (max-width: 767px) {
+  .project-heading {
+    font-size: 24px;
+  }
+  .project-title{
+    font-size: 22px;
+  }
+  .tech-stack {
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* optional, adjust spacing between tags */
+  }
+  .read-more{
+    margin-top: -30px;
+  }
+}
+
+/*Project Detail Component */
+@media only screen and (max-width: 767px) {
+   .project-details {
+    font-size: smaller;
+    padding: 1rem;
+  }
+
+  .project-modal-box {
+    max-width: 92vw;
+    border-radius: 1rem;
+  }
+
+  .project-main-image {
+    max-height: 160px;
+    object-fit: cover;
+  }
+
+  .project-detail-title {
+    font-size: 1.1rem;
+  }
+
+  .project-description,
+  .project-subdescription {
+    font-size: 0.85rem;
+  }
+
+  .project-detail-stack{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+
+  .project-modal-box .size-10 {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/*Experience Section*/
+@media only screen and (max-width: 767px) {
+    .experience-details{
+        font-size: smaller;
+    }
+}
+
+/*Copy Email Button Component*/
+.email-copy-button,.download-button{
+  font-size: 15px;
+}
+.download-button{
+  margin-top: 20px;
+  font-size: 13px;
+}
+@media only screen and (max-width: 767px) {
+    
+}

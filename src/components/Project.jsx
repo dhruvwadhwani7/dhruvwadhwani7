@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ProjectDetails from "./ProjectDetails";
+import "../project_layout.css"
 
 const Project = ({
   title,
@@ -19,8 +20,8 @@ const Project = ({
         onMouseLeave={() => setPreview(null)}
       >
         <div>
-          <p className="text-2xl">{title}</p>
-          <div className="flex gap-5 mt-2 text-sand">
+          <p className="text-2xl project-title">{title}</p>
+          <div className="flex gap-5 mt-2 text-sand tech-stack">
             {tags.map((tag) => (
               <span key={tag.id}>{tag.name}</span>
             ))}
@@ -28,7 +29,7 @@ const Project = ({
         </div>
         <button
           onClick={() => setIsHidden(true)}
-          className="flex items-center gap-1 cursor-pointer hover-animation"
+          className="flex items-center gap-1 cursor-pointer hover-animation read-more"
         >
           Read More
           <img src="assets/arrow-right.svg" className="w-5" />
