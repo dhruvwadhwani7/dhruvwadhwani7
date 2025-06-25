@@ -24,8 +24,8 @@ const CopyEmailButton = () => {
     } else {
       // Direct download for desktop and Android
       const link = document.createElement("a");
-      link.href = "/assets/Dhruv-Wadhwani-Resume.pdf";
-      link.download = "Dhruv-Wadhwani-Resume.pdf";
+      link.href = "/assets/Dhruv_Wadhwani_Resume.pdf";
+      link.download = "Dhruv_Wadhwani_Resume.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -77,7 +77,6 @@ const CopyEmailButton = () => {
         whileTap={{ scale: 1.05 }}
         className="relative px-3 py-3 text-xs text-center rounded-full font-light bg-primary w-[10rem] cursor-pointer overflow-hidden flex items-center justify-center gap-2 download-button"
       >
-        <img src="assets/download.svg" className="w-4" alt="download icon" />
         Download Resume
       </motion.button>
     </div>
