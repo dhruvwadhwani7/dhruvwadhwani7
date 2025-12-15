@@ -1,307 +1,176 @@
 export const myProjects = [
   {
     id: 1,
+    title: "SoulSetu – Social Discovery System (In Progress)",
+    description:
+      "A cross-platform social discovery application focused on verified, proximity-based matchmaking with a strong emphasis on clean UI, smooth onboarding, and real-time interactions.",
+    subDescription: [
+      "Building a frontend-first React Native application with intuitive onboarding, profile flows, and discovery UI.",
+      "Designed responsive and accessible UI using NativeWind with a focus on usability and smooth user experience.",
+      "Integrated Supabase backend with RLS security, real-time data sync, and PostgreSQL triggers.",
+      "Implemented OTP-based authentication and real-time chat functionality for seamless user interaction.",
+      "Currently improving performance, UX flows, and scalability while preparing the app for production release.",
+    ],
+    href: "https://github.com/dhruvwadhwani7/SoulSetu-SocializingApp", // project is private / in progress
+    logo: "",
+    image: "/assets/projects/Soul_Setu_Mockup.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "React Native",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "NativeWind",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 3,
+        name: "Supabase",
+        path: "/assets/logos/supabase.png",
+      },
+      {
+        id: 4,
+        name: "PostgreSQL",
+        path: "/assets/logos/postgres.png",
+      },
+      {
+        id: 5,
+        name: "PostGIS",
+        path: "/assets/logos/postgis.png",
+      },
+      {
+        id: 6,
+        name: "Docker",
+        path: "/assets/logos/docker.png",
+      },
+      {
+        id: 7,
+        name: "Figma",
+        path: "/assets/logos/figma.svg",
+      },
+    ],
+  },
+
+  {
+    id: 2,
     title: "Excel Analyzer Platform",
     description:
       "A full-stack web platform for analyzing Excel files with AI-driven insights, real-time chart generation, and admin-level monitoring capabilities.",
     subDescription: [
-      "Mobilized end-to-end development of the platform using React.js, Node.js, and MongoDB, enabling secure file uploads and intelligent Excel parsing.",
-      "Integrated AI models to generate contextual data insights from Excel sheets, improving analysis efficiency by 40%.",
-      "Built an admin dashboard to monitor system usage, manage files, and visualize platform performance with real-time charts.",
-      "Implemented secure user authentication and responsive design using Tailwind CSS, ensuring seamless user interaction across devices.",
+      "Built a frontend-heavy analytics dashboard using React with clean UI and real-time visual feedback.",
+      "Implemented responsive layouts and interactive charts for better data understanding.",
+      "Integrated backend APIs for Excel parsing and AI-based insights.",
+      "Focused on usability, performance, and clarity of data presentation.",
     ],
     href: "https://excelanalyzer.netlify.app/",
     logo: "",
     image: "/assets/projects/Excel_Analyzer.png",
     tags: [
-      {
-        id: 1,
-        name: "React",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 2,
-        name: "Javascript",
-        path: "/assets/logos/javascript.svg",
-      },
-      {
-        id: 3,
-        name: "Docker",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
-      },
-      {
-        id: 5,
-        name: "Render",
-        path: "/assets/logos/deploy.png",
-      },
-      {
-        id: 6,
-        name: "Netlify",
-        path: "/assets/logos/netlify.png",
-      },
-      {
-        id: 7,
-        name: "MongoDB",
-        path: "/assets/logos/mongodb.svg",
-      },
-      {
-        id: 8,
-        name: "ThreeJS",
-        path: "/assets/logos/threejs_white.svg",
-      },
+      { id: 1, name: "React.js", path: "/assets/logos/react.svg" },
+      { id: 2, name: "Tailwind CSS", path: "/assets/logos/tailwindcss.svg" },
+      { id: 3, name: "JavaScript", path: "/assets/logos/javascript.svg" },
+      { id: 4, name: "Chart.js", path: "/assets/logos/chart.png" },
+      { id: 5, name: "Axios", path: "/assets/logos/axios.png" },
+      { id: 6, name: "Vite", path: "/assets/logos/vitejs.svg" },
+      { id: 7, name: "Docker", path: "/assets/logos/docker.png" },
+      { id: 8, name: "Netlify", path: "/assets/logos/netlify.png" },
+      { id: 9, name: "Render", path: "/assets/logos/deploy.png" },
     ],
   },
+
   {
-    id: 2,
+    id: 3,
     title: "Real Estate Website – Urban Scale",
     description:
-      "A full-stack property listing and discovery platform enabling users to explore, post, and manage real estate listings with secure authentication and geolocation-based filtering.",
+      "A full-stack property listing platform with a frontend focused on clean layouts, intuitive navigation, and location-based discovery.",
     subDescription: [
-      "Developed a full-stack real estate listing app using the MERN stack with full CRUD functionality for properties.",
-      "Implemented JWT authentication and role-based access control to secure user and admin operations.",
-      "Added geolocation-based filtering to surface local listings, improving user engagement by 10%.",
-      "Optimized MongoDB queries with indexing for faster property data retrieval.",
-      "Configured secure CORS and middleware for smooth and protected API communication.",
-      "Deployed frontend and backend via Netlify and Render with CI/CD setup for production.",
+      "Designed responsive property listing UI with attention to layout and readability.",
+      "Implemented filters and listing views optimized for user browsing.",
+      "Connected frontend to secure backend APIs with JWT authentication.",
+      "Improved UX by optimizing data fetching and page transitions.",
     ],
     href: "https://github.com/dhruvwadhwani7/Real-Estate-Website",
     logo: "",
     image: "/assets/projects/Real Estate.png",
     tags: [
-      {
-        id: 1,
-        name: "MongoDB",
-        path: "/assets/logos/mongodb.svg",
-      },
-      {
-        id: 2,
-        name: "Express.js",
-        path: "/assets/logos/expressjs.svg",
-      },
-      {
-        id: 3,
-        name: "Node.js",
-        path: "/assets/logos/nodejs.svg",
-      },
-      {
-        id: 4,
-        name: "JWT",
-        path: "/assets/logos/jwt.svg",
-      },
-      {
-        id: 5,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 6,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 7,
-        name: "Netlify",
-        path: "/assets/logos/netlify.png",
-      },
-      {
-        id: 8,
-        name: "Render",
-        path: "/assets/logos/deploy.png",
-      },
+      { id: 1, name: "HTML5", path: "/assets/logos/html5.svg" },
+      { id: 2, name: "CSS3", path: "/assets/logos/css3.svg" },
+      { id: 3, name: "JavaScript", path: "/assets/logos/javascript.svg" },
+      { id: 4, name: "Node.js", path: "/assets/logos/nodejs.svg" },
+      { id: 5, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
+      { id: 6, name: "JWT", path: "/assets/logos/jwt.svg" },
+      { id: 7, name: "Netlify", path: "/assets/logos/netlify.png" },
+      { id: 8, name: "Render", path: "/assets/logos/deploy.png" },
     ],
   },
+
   {
-    id: 3,
+    id: 4,
     title: "Hate Speech Detection Web App",
     description:
-      "An AI-powered web application that detects and classifies hate speech in real-time using NLP models and Flask APIs, designed to promote safer online interactions.",
+      "An AI-powered web application with a clean frontend interface for real-time hate speech detection.",
     subDescription: [
-      "Developed a complete hate speech detection system using Python and Flask, with deep learning-based NLP models achieving over 92% accuracy on real-world datasets.",
-      "Designed and trained text classification pipelines for identifying offensive language, threats, and toxicity using tokenization, vectorization, and pre-trained word embeddings.",
-      "Built a robust Flask-based API for real-time inference and deployed it as a scalable backend service.",
-      "Deployed frontend on Vercel and backend Flask service using Render, ensuring CI/CD pipeline with smooth integration and fast response times.",
+      "Designed a simple and accessible frontend for text input and live prediction results.",
+      "Focused on clarity, responsiveness, and minimal UI distractions.",
+      "Integrated Flask APIs for real-time model inference.",
     ],
     href: "https://github.com/dhruvwadhwani7/Hate-Speech-Detection",
     logo: "",
     image: "/assets/projects/Hate_Speech.jpg",
     tags: [
-      {
-        id: 1,
-        name: "Python",
-        path: "/assets/logos/python.svg",
-      },
-      {
-        id: 2,
-        name: "Flask",
-        path: "/assets/logos/flask.svg",
-      },
-      {
-        id: 3,
-        name: "MongoDB",
-        path: "/assets/logos/mongodb.svg",
-      },
-      {
-        id: 4,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 5,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 6,
-        name: "JavaScript",
-        path: "/assets/logos/javascript.svg",
-      },
-      {
-        id: 7,
-        name: "Netlify",
-        path: "/assets/logos/netlify.png",
-      },
-      {
-        id: 8,
-        name: "NLP",
-        path: "/assets/logos/nlp.png",
-      },
+      { id: 1, name: "HTML5", path: "/assets/logos/html5.svg" },
+      { id: 2, name: "CSS3", path: "/assets/logos/css3.svg" },
+      { id: 3, name: "JavaScript", path: "/assets/logos/javascript.svg" },
+      { id: 4, name: "Python", path: "/assets/logos/python.svg" },
+      { id: 5, name: "Flask", path: "/assets/logos/flask.svg" },
+      { id: 6, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
+      { id: 7, name: "Vercel", path: "/assets/logos/vercel.svg" },
     ],
   },
+
   {
-    id: 4,
+    id: 5,
     title: "Spotify Clone – Frontend UI",
     description:
-      "A pixel-perfect frontend recreation of Spotify's user interface, built for seamless desktop experience with responsive design and music-themed interactions.",
+      "A pixel-perfect frontend recreation of Spotify focused purely on UI accuracy and responsiveness.",
     subDescription: [
-      "Developed a responsive and accessible Spotify-inspired user interface using modern HTML, CSS, and JavaScript techniques.",
-      "Recreated core UI components such as the sidebar, navigation bar, playback controls, album cards, and playlist views with a focus on precision and visual consistency.",
-      "Utilized CSS Flexbox and Grid for robust layout structure, ensuring fluid adaptability across various screen sizes.",
-      "Integrated Font Awesome and custom SVG icons for dynamic visuals that match Spotify’s aesthetic.",
-      "Designed and deployed the project to GitHub Pages for real-time access and sharing.",
+      "Recreated Spotify’s layout with precise spacing, typography, and interactions.",
+      "Used Flexbox and Grid for scalable layouts.",
+      "Focused entirely on frontend polish and visual consistency.",
     ],
     href: "https://github.com/dhruvwadhwani7/Spotify-Clone",
     logo: "",
     image: "/assets/projects/Spotify_Clone.png",
     tags: [
-      {
-        id: 1,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 2,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 3,
-        name: "JavaScript",
-        path: "/assets/logos/javascript.svg",
-      },
-      {
-        id: 4,
-        name: "Flexbox",
-        path: "/assets/logos/design.png",
-      },
+      { id: 1, name: "HTML5", path: "/assets/logos/html5.svg" },
+      { id: 2, name: "CSS3", path: "/assets/logos/css3.svg" },
+      { id: 3, name: "JavaScript", path: "/assets/logos/javascript.svg" },
     ],
   },
+
   {
-    id: 5,
+    id: 6,
     title: "Personal Portfolio Website",
     description:
-      "A visually appealing and responsive portfolio website to showcase projects, skills, experience, and contact information, built using core web technologies.",
+      "A clean, responsive portfolio website built to showcase projects and frontend skills.",
     subDescription: [
-      "Built a personal portfolio using semantic HTML5, CSS3, and vanilla JavaScript to showcase professional identity.",
-      "Designed a minimal, accessible UI with smooth transitions and responsive layout for all devices.",
-      "Developed dynamic sections for projects, skills, contact, and about to highlight capabilities.",
-      "Integrated scroll animations and hover effects to boost interactivity and engagement.",
-      "Deployed via GitHub Pages with custom domain for professional presence.",
+      "Designed a minimal UI with smooth animations.",
+      "Focused on responsiveness and accessibility.",
+      "Deployed with a professional custom domain.",
     ],
     href: "https://dhruvwadhwani.netlify.app/",
     logo: "",
     image: "/assets/projects/portfolio.png",
     tags: [
-      {
-        id: 1,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 2,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 3,
-        name: "JavaScript",
-        path: "/assets/logos/javascript.svg",
-      },
-      {
-        id: 4,
-        name: "Flexbox",
-        path: "/assets/logos/design.png",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "Travel WebApp – UI/UX Design & Frontend Build",
-    description:
-      "An immersive travel web application focused on seamless exploration, bookings, and travel storytelling. Currently under development with pixel-perfect designs crafted in Figma and Adobe XD, and built using modern frontend frameworks.",
-    subDescription: [
-      "Designed a travel web app in Figma and Adobe XD with intuitive navigation and vibrant UI.",
-      "Created wireframes, high-fidelity mockups, and interactive prototypes for key user flows.",
-      "Integrating APIs for dynamic content like destinations, weather, and travel blogs using React.",
-      "Implemented routing with React Router for seamless navigation.",
-      "Version-controlled on GitHub with deployment planned via Vercel for user testing.",
-    ],
-    href: "https://github.com/dhruvwadhwani7/Travel-WebApp", // Replace if live
-    logo: "",
-    image: "/assets/projects/TRAVEL.png",
-    tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 2,
-        name: "Tailwind CSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-      {
-        id: 3,
-        name: "Figma",
-        path: "/assets/logos/figma.svg",
-      },
-      {
-        id: 4,
-        name: "Adobe XD",
-        path: "/assets/logos/adobe.svg",
-      },
-      {
-        id: 5,
-        name: "JavaScript",
-        path: "/assets/logos/javascript.svg",
-      },
-      {
-        id: 6,
-        name: "Netlify",
-        path: "/assets/logos/netlify.png",
-      },
-      {
-        id: 7,
-        name: "React Router",
-        path: "/assets/logos/react-router.png",
-      },
+      { id: 1, name: "HTML5", path: "/assets/logos/html5.svg" },
+      { id: 2, name: "CSS3", path: "/assets/logos/css3.svg" },
+      { id: 3, name: "JavaScript", path: "/assets/logos/javascript.svg" },
     ],
   },
 ];
+
 
 export const mySocials = [
   {
