@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
+import { motion ,AnimatePresence } from "motion/react";
 import "../project_layout.css";
 
 const CopyEmailButton = () => {

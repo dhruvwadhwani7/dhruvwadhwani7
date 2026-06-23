@@ -3,12 +3,12 @@ export const myProjects = [
     id: 1,
     title: "SoulSetu – Social Discovery System (In Progress)",
     description:
-      "A cross-platform social discovery application focused on verified, proximity-based matchmaking with a strong emphasis on clean UI, smooth onboarding, and real-time interactions.",
+      "A cross-platform social discovery application for Android and iOS, focused on verified, proximity-based matchmaking with a strong emphasis on clean UI, smooth onboarding, and real-time interactions.",
     subDescription: [
-      "Building a frontend-first React Native application with intuitive onboarding, profile flows, and discovery UI.",
-      "Designed responsive and accessible UI using NativeWind with a focus on usability and smooth user experience.",
-      "Integrated Supabase backend with RLS security, real-time data sync, and PostgreSQL triggers.",
-      "Implemented OTP-based authentication and real-time chat functionality for seamless user interaction.",
+      "Building a frontend-first React Native application with intuitive onboarding, profile flows, and discovery UI for both Android and iOS.",
+      "Designed responsive and accessible interfaces using NativeWind, with a focus on usability and a smooth end-to-end user experience.",
+      "Integrated a Supabase backend with Row Level Security (RLS), real-time data sync, and PostgreSQL triggers.",
+      "Implemented OTP-based authentication and real-time chat for seamless user interaction.",
       "Currently improving performance, UX flows, and scalability while preparing the app for production release.",
     ],
     href: "https://github.com/dhruvwadhwani7/SoulSetu-SocializingApp", // project is private / in progress
@@ -59,9 +59,9 @@ export const myProjects = [
     description:
       "A full-stack web platform for analyzing Excel files with AI-driven insights, real-time chart generation, and admin-level monitoring capabilities.",
     subDescription: [
-      "Built a frontend-heavy analytics dashboard using React with clean UI and real-time visual feedback.",
-      "Implemented responsive layouts and interactive charts for better data understanding.",
-      "Integrated backend APIs for Excel parsing and AI-based insights.",
+      "Built a frontend-heavy analytics dashboard in React with a clean UI and real-time visual feedback.",
+      "Implemented responsive layouts and interactive charts for clearer data understanding.",
+      "Integrated backend APIs for Excel parsing and AI-based insight generation.",
       "Focused on usability, performance, and clarity of data presentation.",
     ],
     href: "https://excelanalyzer.netlify.app/",
@@ -86,9 +86,9 @@ export const myProjects = [
     description:
       "A full-stack property listing platform with a frontend focused on clean layouts, intuitive navigation, and location-based discovery.",
     subDescription: [
-      "Designed responsive property listing UI with attention to layout and readability.",
-      "Implemented filters and listing views optimized for user browsing.",
-      "Connected frontend to secure backend APIs with JWT authentication.",
+      "Designed a responsive property listing UI with attention to layout and readability.",
+      "Implemented filters and listing views optimized for easy browsing.",
+      "Connected the frontend to secure backend APIs with JWT authentication.",
       "Improved UX by optimizing data fetching and page transitions.",
     ],
     href: "https://github.com/dhruvwadhwani7/Real-Estate-Website",
@@ -112,7 +112,7 @@ export const myProjects = [
     description:
       "An AI-powered web application with a clean frontend interface for real-time hate speech detection.",
     subDescription: [
-      "Designed a simple and accessible frontend for text input and live prediction results.",
+      "Designed a simple, accessible frontend for text input and live prediction results.",
       "Focused on clarity, responsiveness, and minimal UI distractions.",
       "Integrated Flask APIs for real-time model inference.",
     ],
@@ -134,10 +134,10 @@ export const myProjects = [
     id: 5,
     title: "Spotify Clone – Frontend UI",
     description:
-      "A pixel-perfect frontend recreation of Spotify focused purely on UI accuracy and responsiveness.",
+      "A pixel-perfect frontend recreation of Spotify, focused purely on UI accuracy and responsiveness.",
     subDescription: [
-      "Recreated Spotify’s layout with precise spacing, typography, and interactions.",
-      "Used Flexbox and Grid for scalable layouts.",
+      "Recreated Spotify's layout with precise spacing, typography, and interactions.",
+      "Used Flexbox and CSS Grid for scalable, maintainable layouts.",
       "Focused entirely on frontend polish and visual consistency.",
     ],
     href: "https://github.com/dhruvwadhwani7/Spotify-Clone",
@@ -170,7 +170,6 @@ export const myProjects = [
     ],
   },
 ];
-
 
 export const mySocials = [
   {
@@ -210,17 +209,67 @@ export const experiences = [
   },
   {
     title: "Software Development Intern",
-    job: "Zidio Development Pvt. Ltd. , Remote",
-    date: "May 2025 – Present [Ends in July]",
+    job: "Zidio Development Pvt. Ltd., Remote",
+    date: "May 2025 – Jul 2025",
     contents: [
-      "Orchestrated a 5-member development team to deliver two enterprise-grade web applications: an Excel analytics platform and a dynamic blogging system.",
-      "Led frontend and backend architecture planning using MERN stack technologies and ensured scalable design.",
+      "Coordinated a 5-member development team to deliver two enterprise-grade web applications: an Excel analytics platform and a dynamic blogging system.",
+      "Led frontend and backend architecture planning using the MERN stack, ensuring scalable and maintainable design.",
       "Integrated CI/CD pipelines using GitHub Actions for automated testing and seamless deployment.",
-      "Conducted code reviews, enforced version control practices, and maintained documentation for long-term maintainability.",
-      "Facilitated Agile-based sprints, coordinated task assignments, and regularly demoed progress to project stakeholders.",
+      "Conducted code reviews, enforced version-control practices, and maintained documentation for long-term maintainability.",
+      "Facilitated Agile sprints, coordinated task assignments, and regularly demoed progress to project stakeholders.",
+    ],
+  },
+  {
+    title: "Software Developer Intern",
+    job: "Cognitive Nest Tech Solutions LLP",
+    date: "Jan 2026 – Jul 2026",
+    contents: [
+      "Engineered core modules of KCM Web — an enterprise-grade CRM and business-calling platform built for high-volume sales teams — including a redesigned Caller UI, a draggable WebRTC-based Floating Dialer (Yeastar PBX, SIP.js, ys-webrtc-sdk), and dedicated agent lead views for Canvas, Canvas Plus, Hot Leads, and Clients.",
+      "Built a reusable Enhanced Data Table on TanStack Table v8 with server-side pagination, column and filter hook abstractions, and a popover-based active-filter engine, alongside a multi-dimensional Lead & Call Status model, phone masking, scheduled callback notifications (Sonner + TanStack Query polling), and a red-flag email alerting system.",
+      "Developed FastAPI endpoints backed by PostgreSQL (SQLAlchemy + Alembic) and Redis, implemented a region-aware DNCR (Do Not Call Registry) compliance engine for UAE regulations, and managed call-recording storage on AWS S3 with automated alerts via AWS SES.",
+      "Bootstrapped the Cognitive Admin Dashboard from scratch using React 19 + Vite, Redux Toolkit, TanStack Query v5, ShadCN UI, Tailwind CSS v4, and React Hook Form with Zod validation.",
+      "Built the AI Voice Agent module enabling real-time, AI-driven phone calls — integrating LiveKit for live audio streaming, Deepgram for speech-to-text, and Google GenAI for natural-language responses — together with scheduled-call automation and inbound SIP trunk routing on a FastAPI + MongoDB (Motor async driver) backend.",
+      "Collaborated in a fully remote, cross-timezone Agile team — following Git feature-branch workflows, maintaining Notion documentation, and using Metabase, PgAdmin, and PostHog for data analysis and product insights.",
     ],
   },
 ];
+
+export const techStack = [
+  // Languages
+  { id: 1, name: "JavaScript", path: "/assets/logos/javascript.svg" },
+  { id: 2, name: "Python", path: "/assets/logos/python.svg" },
+
+  // Frontend
+  { id: 4, name: "React.js", path: "/assets/logos/react.svg" },
+  { id: 5, name: "React Native", path: "/assets/logos/react.svg" },
+  { id: 6, name: "Tailwind CSS", path: "/assets/logos/tailwindcss.svg" },
+  { id: 7, name: "NativeWind", path: "/assets/logos/tailwindcss.svg" },
+  { id: 8, name: "Redux Toolkit", path: "/assets/logos/redux.svg" },
+  { id: 9, name: "TanStack Query", path: "/assets/logos/reactquery.svg" },
+
+  // Backend
+  { id: 10, name: "Node.js", path: "/assets/logos/nodejs.svg" },
+  { id: 11, name: "Express.js", path: "/assets/logos/express.svg" },
+  { id: 12, name: "NestJS", path: "/assets/logos/nestjs.svg" },
+  { id: 13, name: "FastAPI", path: "/assets/logos/fastapi.svg" },
+  { id: 14, name: "Flask", path: "/assets/logos/flask.svg" },
+  { id: 15, name: "Django", path: "/assets/logos/django.svg" },
+
+  // Databases
+  { id: 16, name: "PostgreSQL", path: "/assets/logos/postgres.png" },
+  { id: 17, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
+  { id: 18, name: "Supabase", path: "/assets/logos/supabase.png" },
+  { id: 19, name: "Redis", path: "/assets/logos/redis.svg" },
+  { id: 20, name: "PostGIS", path: "/assets/logos/postgis.png" },
+
+  // DevOps & Tools
+  { id: 21, name: "Docker", path: "/assets/logos/docker.png" },
+  { id: 22, name: "Git & GitHub", path: "/assets/logos/git.svg" },
+  { id: 23, name: "AWS", path: "/assets/logos/aws.svg" },
+  { id: 24, name: "Vite", path: "/assets/logos/vitejs.svg" },
+  { id: 25, name: "Figma", path: "/assets/logos/figma.svg" },
+];
+
 export const certifications = [
   {
     id: 1,
