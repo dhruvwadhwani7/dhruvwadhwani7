@@ -3,9 +3,12 @@ import Card from "../components/Card";
 import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks";
+import { techStack } from "../constants";
 
 const About = () => {
   const grid2Container = useRef();
+  const getRandom = (min, max) => Math.random() * (max - min) + min;
+  const aboutTech = techStack.filter((t) => t.inAbout);
   return (
     <section className="c-space section-spacing" id="about">
       <h2 className="text-heading">About Me</h2>
@@ -30,49 +33,21 @@ const About = () => {
             ref={grid2Container}
             className="flex items-center justify-center w-full h-full"
           >
-            <p className="flex items-end text-5xl text-gray-500">
-              CODING IS FUN
+            <p className="flex items-end text-2xl text-gray-300">
+              My tech skills...
             </p>
-            <Card
-              style={{ rotate: "75deg", top: "30%", left: "20%" }}
-              text="Python"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-30deg", top: "60%", left: "45%" }}
-              text="Data Anaysis"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-              text="Web Apps"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-              text="Designing"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "20deg", top: "10%", left: "38%" }}
-              text="Development"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="assets/logos/javascript.svg"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="assets/logos/react.svg"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/python.svg"
-              containerRef={grid2Container}
-            />
+            {aboutTech.map((tech) => (
+              <Card
+                key={tech.id}
+                image={tech.path}
+                containerRef={grid2Container}
+                style={{
+                  rotate: `${getRandom(-80, 80)}deg`,
+                  top: `${getRandom(5, 80)}%`,
+                  left: `${getRandom(5, 80)}%`,
+                }}
+              />
+            ))}
           </div>
         </div>
         {/* Grid 3 */}
@@ -80,7 +55,9 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Time Zone</p>
             <p className="subtext">
-              I'm based on Earth, Freelancing Now 
+              I'm based on Earth, 
+              <br/>
+              Interning Now 
             </p>
           </div>
           <figure className="absolute left-[30%] top-[10%]">

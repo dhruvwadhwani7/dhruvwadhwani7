@@ -1,38 +1,45 @@
+import { techStack } from "../constants";
 import { OrbitingCircles } from "./OrbitingCircles";
 
+
+// helpers
+const getGroup = (groups) =>
+  techStack.filter((t) => groups.includes(t.group));
+
 export function Frameworks() {
-  const skills = [
-    "auth0",
-    "css3",
-    "git",
-    "html5",
-    "javascript",
-    "microsoft",
-    "python",
-    "react",
-    "sqlite",
-    "tailwindcss",
-    "vitejs",
-    "mongodb",
-    "stripe"
-  ];
-  
+  const core = getGroup(["language"]);
+  const frontend = getGroup(["frontend"]);
+  const backendTools = getGroup(["backend", "database", "tools"]);
+
   return (
-    <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">
-      <OrbitingCircles iconSize={40}>
-        {skills.map((skill, index) => (
-          <Icon key={index} src={`assets/logos/${skill}.svg`} />
+    <div className="relative flex h-[20rem] w-full items-center justify-center">
+
+      <OrbitingCircles radius={50} iconSize={36} speed={1.8}>
+        {core.map((tech) => (
+          <Icon key={tech.id} src={tech.path} alt={tech.name} />
         ))}
       </OrbitingCircles>
-      <OrbitingCircles iconSize={25} radius={100} reverse speed={2}>
-        {skills.reverse().map((skill, index) => (
-          <Icon key={index} src={`assets/logos/${skill}.svg`} />
+
+      <OrbitingCircles radius={110} iconSize={36} speed={1} reverse>
+        {frontend.map((tech) => (
+          <Icon key={tech.id} src={tech.path} alt={tech.name} />
         ))}
       </OrbitingCircles>
+
+      <OrbitingCircles radius={170} iconSize={36} speed={0.8}>
+        {backendTools.map((tech) => (
+          <Icon key={tech.id} src={tech.path} alt={tech.name} />
+        ))}
+      </OrbitingCircles>
+
     </div>
   );
 }
 
-const Icon = ({ src }) => (
-  <img src={src} className="duration-200 rounded-sm hover:scale-110" />
+const Icon = ({ src, alt }) => (
+  <img
+    src={src}
+    alt={alt}
+    className="object-contain transition-transform duration-200 hover:scale-110"
+  />
 );

@@ -236,38 +236,39 @@ export const experiences = [
 
 export const techStack = [
   // Languages
-  { id: 1, name: "JavaScript", path: "/assets/logos/javascript.svg" },
-  { id: 2, name: "Python", path: "/assets/logos/python.svg" },
+  { id: 1, name: "JavaScript", path: "/assets/logos/javascript.svg", group: "language", inAbout: true },
+  { id: 2, name: "Python", path: "/assets/logos/python.svg", group: "language", inAbout: true },
+  { id: 3, name: "TypeScript", path: "/assets/logos/typescript.png", group: "language", inAbout: true },
+  { id: 24, name: "Bash", path: "/assets/logos/bash.png", group: "language", inAbout: true },
 
   // Frontend
-  { id: 4, name: "React.js", path: "/assets/logos/react.svg" },
-  { id: 5, name: "React Native", path: "/assets/logos/react.svg" },
-  { id: 6, name: "Tailwind CSS", path: "/assets/logos/tailwindcss.svg" },
-  { id: 7, name: "NativeWind", path: "/assets/logos/tailwindcss.svg" },
-  { id: 8, name: "Redux Toolkit", path: "/assets/logos/redux.svg" },
-  { id: 9, name: "TanStack Query", path: "/assets/logos/reactquery.svg" },
+  { id: 4, name: "React.js", path: "/assets/logos/react.svg", group: "frontend", inAbout: true },
+  { id: 5, name: "React Native", path: "/assets/logos/react.svg", group: "frontend-repeat"},
+  { id: 6, name: "Tailwind CSS", path: "/assets/logos/tailwindcss.svg", group: "frontend", inAbout: true },
+  { id: 7, name: "NativeWind", path: "/assets/logos/tailwindcss.svg", group: "frontend-repeat" },
+  { id: 8, name: "Redux Toolkit", path: "/assets/logos/redux.png", group: "frontend", inAbout: true },
+  { id: 9, name: "TanStack Query", path: "/assets/logos/reactquery.png", group: "frontend", inAbout: true },
+  { id: 25, name: "Next.js", path: "/assets/logos/nextjs.jpg", group: "frontend", inAbout: true },
 
   // Backend
-  { id: 10, name: "Node.js", path: "/assets/logos/nodejs.svg" },
-  { id: 11, name: "Express.js", path: "/assets/logos/express.svg" },
-  { id: 12, name: "NestJS", path: "/assets/logos/nestjs.svg" },
-  { id: 13, name: "FastAPI", path: "/assets/logos/fastapi.svg" },
-  { id: 14, name: "Flask", path: "/assets/logos/flask.svg" },
-  { id: 15, name: "Django", path: "/assets/logos/django.svg" },
+  { id: 10, name: "Node.js", path: "/assets/logos/nodejs.svg", group: "backend", inAbout: true },
+  { id: 11, name: "Express.js", path: "/assets/logos/express.png", group: "backend", inAbout: true },
+  { id: 12, name: "NestJS", path: "/assets/logos/nestjs.png", group: "backend", inAbout: true },
+  { id: 13, name: "FastAPI", path: "/assets/logos/fastapi.png", group: "backend", inAbout: true },
+  { id: 14, name: "Flask", path: "/assets/logos/flask.svg", group: "backend", inAbout: true },
+  { id: 15, name: "Django", path: "/assets/logos/django.png", group: "backend", inAbout: true },
 
   // Databases
-  { id: 16, name: "PostgreSQL", path: "/assets/logos/postgres.png" },
-  { id: 17, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
-  { id: 18, name: "Supabase", path: "/assets/logos/supabase.png" },
-  { id: 19, name: "Redis", path: "/assets/logos/redis.svg" },
-  { id: 20, name: "PostGIS", path: "/assets/logos/postgis.png" },
+  { id: 16, name: "PostgreSQL", path: "/assets/logos/postgres.png", group: "database", inAbout: true },
+  { id: 17, name: "MongoDB", path: "/assets/logos/mongodb.svg", group: "database", inAbout: true },
+  { id: 18, name: "Supabase", path: "/assets/logos/supabase.png", group: "database", inAbout: true },
+  { id: 19, name: "Redis", path: "/assets/logos/redis.png", group: "database", inAbout: true },
 
-  // DevOps & Tools
-  { id: 21, name: "Docker", path: "/assets/logos/docker.png" },
-  { id: 22, name: "Git & GitHub", path: "/assets/logos/git.svg" },
-  { id: 23, name: "AWS", path: "/assets/logos/aws.svg" },
-  { id: 24, name: "Vite", path: "/assets/logos/vitejs.svg" },
-  { id: 25, name: "Figma", path: "/assets/logos/figma.svg" },
+  // Tools
+  { id: 21, name: "Docker", path: "/assets/logos/docker.png", group: "tools", inAbout: true },
+  { id: 22, name: "Git", path: "/assets/logos/git.svg", group: "tools", inAbout: true },
+  { id: 23, name: "AWS", path: "/assets/logos/aws.png", group: "tools", inAbout: true },
+  { id: 26, name: "Postman", path: "/assets/logos/postman.png", group: "tools", inAbout: true },
 ];
 
 export const certifications = [
